@@ -1,0 +1,12 @@
+.container-fluid {
+  max-height: 100%;
+}
+textarea {
+  display: block;
+  outline: none;
+  height: 14em;
+}
+#preview {
+  height: 500px;
+  background-color: #fff;
+}
