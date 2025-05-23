@@ -2,8 +2,6 @@ import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import "./App.css";
 
-const editorValue = document.getElementById("editor");
-const preview = document.getElementById("preview");
 const firstLoadText = `
 # A first-level heading
 
@@ -39,11 +37,10 @@ function App() {
     setEditor(editorValue);
     return editorValue;
   };
-  console.log(editor === firstLoadText);
   return (
     <div className="d-flex flex-column bg-success align-items-center">
       <figure className="mt-5 col-sm-8">
-        <figcaption className="w-100 p-2 bg-white">Editor</figcaption>
+        <figcaption className="container p-2 bg-white">Editor</figcaption>
         <textarea
           name=""
           id="editor"
@@ -56,7 +53,7 @@ function App() {
         </textarea>
       </figure>
       <figure className="mt-5 mb-5 col-sm-10">
-        <figcaption className="w-100 p-2 bg-white">Preview</figcaption>
+        <figcaption className="container p-2 bg-white">Preview</figcaption>
         <div id="preview" className="container border-top rounded-bottom">
           <ReactMarkdown>{editor}</ReactMarkdown>
         </div>

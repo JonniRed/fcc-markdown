@@ -24,3 +24,6 @@ textarea {
 img {
   width: 100px;
 }
+#root > div {
+  height: 100%;
+}
